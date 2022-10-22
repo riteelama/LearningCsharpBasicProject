@@ -1,0 +1,13 @@
+D:\LearningCsharpBasicProject\UserManagement\bin\Release\net6.0\UserManagement.deps.json
+D:\LearningCsharpBasicProject\UserManagement\bin\Release\net6.0\UserManagement.dll
+D:\LearningCsharpBasicProject\UserManagement\bin\Release\net6.0\ref\UserManagement.dll
+D:\LearningCsharpBasicProject\UserManagement\bin\Release\net6.0\UserManagement.pdb
+D:\LearningCsharpBasicProject\UserManagement\obj\Release\net6.0\UserManagement.GlobalUsings.g.cs
+D:\LearningCsharpBasicProject\UserManagement\obj\Release\net6.0\UserManagement.csproj.AssemblyReference.cache
+D:\LearningCsharpBasicProject\UserManagement\obj\Release\net6.0\UserManagement.GeneratedMSBuildEditorConfig.editorconfig
+D:\LearningCsharpBasicProject\UserManagement\obj\Release\net6.0\UserManagement.AssemblyInfoInputs.cache
+D:\LearningCsharpBasicProject\UserManagement\obj\Release\net6.0\UserManagement.AssemblyInfo.cs
+D:\LearningCsharpBasicProject\UserManagement\obj\Release\net6.0\UserManagement.csproj.CoreCompileInputs.cache
+D:\LearningCsharpBasicProject\UserManagement\obj\Release\net6.0\UserManagement.dll
+D:\LearningCsharpBasicProject\UserManagement\obj\Release\net6.0\ref\UserManagement.dll
+D:\LearningCsharpBasicProject\UserManagement\obj\Release\net6.0\UserManagement.pdb

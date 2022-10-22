@@ -1,0 +1,16 @@
+D:\LearningCsharpBasicProject\DataLayer\bin\Debug\net6.0\DataLayer.deps.json
+D:\LearningCsharpBasicProject\DataLayer\bin\Debug\net6.0\DataLayer.dll
+D:\LearningCsharpBasicProject\DataLayer\bin\Debug\net6.0\ref\DataLayer.dll
+D:\LearningCsharpBasicProject\DataLayer\bin\Debug\net6.0\DataLayer.pdb
+D:\LearningCsharpBasicProject\DataLayer\obj\Debug\net6.0\DataLayer.GlobalUsings.g.cs
+D:\LearningCsharpBasicProject\DataLayer\obj\Debug\net6.0\DataLayer.csproj.AssemblyReference.cache
+D:\LearningCsharpBasicProject\DataLayer\obj\Debug\net6.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\LearningCsharpBasicProject\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfoInputs.cache
+D:\LearningCsharpBasicProject\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfo.cs
+D:\LearningCsharpBasicProject\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CoreCompileInputs.cache
+D:\LearningCsharpBasicProject\DataLayer\obj\Debug\net6.0\DataLayer.dll
+D:\LearningCsharpBasicProject\DataLayer\obj\Debug\net6.0\ref\DataLayer.dll
+D:\LearningCsharpBasicProject\DataLayer\obj\Debug\net6.0\DataLayer.pdb
+D:\LearningCsharpBasicProject\DataLayer\bin\Debug\net6.0\UserManagement.dll
+D:\LearningCsharpBasicProject\DataLayer\bin\Debug\net6.0\UserManagement.pdb
+D:\LearningCsharpBasicProject\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CopyComplete
