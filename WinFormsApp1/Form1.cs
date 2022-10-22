@@ -103,5 +103,26 @@ namespace WinFormsApp1
                 }
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DeleteEmployee();
+        }
+
+        private void DeleteEmployee()
+        {
+            Employee objEmp = new Employee();
+
+            EmployeeDataProvider objData = new EmployeeDataProvider();
+            objData.DeleteEmpBySP(objEmp);
+            objEmp.UserId = userId;
+            objData.DeleteEmpBySP(objEmp);
+            userId = 0;
+
+            MessageBox.Show("Data Deleted from database successfully!!!");
+
+            BindDataGrid();
+         }
+            
+        }
     }
-}

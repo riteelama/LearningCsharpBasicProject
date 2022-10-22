@@ -14,13 +14,13 @@ namespace DataLayer
     {
         string sqlConString = ConfigurationManager.ConnectionStrings["SQLConn"].ToString();
         public void AddEmployee(Employee objEmp)
-        {           
-            
+        {
+
             //"data source=DESKTOP-3KLQDN8\\SQLEXPRESS; database=UserManagement; integrated security=SSPI";
             try
             {
                 using SqlConnection connection = new SqlConnection(sqlConString);
-                SqlCommand cmd = new SqlCommand("insert into Employee values (' "+objEmp.FirstName+" ', ' "+ objEmp.LastName + " ')", connection);
+                SqlCommand cmd = new SqlCommand("insert into Employee values (' " + objEmp.FirstName + " ', ' " + objEmp.LastName + " ')", connection);
                 connection.Open();
                 int rowsAffected = cmd.ExecuteNonQuery();
             }
@@ -75,6 +75,27 @@ namespace DataLayer
             }
         }
 
+        public void DeleteEmpBySP(Employee objEmp)
+        {
+            SqlConnection SQLConn = new SqlConnection(sqlConString);
+            SqlCommand SQLCmd = new SqlCommand();
+            SQLCmd.Connection = SQLConn;
+            SQLCmd.CommandText = "[dbo].[uspEmpDelete]";
+            SQLCmd.CommandType = CommandType.StoredProcedure;
+
+            SQLCmd.Parameters.AddWithValue("@userId", SqlDbType.Int).Value = objEmp.UserId;
+
+            try
+            {
+                SQLConn.Open();
+                SQLCmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
         public DataTable GetAllEmp()
         {
             string strSPName = "[dbo].[uspEmpGetAll]";
@@ -94,7 +115,8 @@ namespace DataLayer
             return dt;
         }
 
-        public DataSet ExecuteProcedureReturnDataSet(string procName, 
+
+        public DataSet ExecuteProcedureReturnDataSet(string procName,
             params SqlParameter[] parameters)
         {
             DataSet result = null;
@@ -106,7 +128,7 @@ namespace DataLayer
                     {
                         command.CommandType = System.Data.CommandType.StoredProcedure;
                         command.CommandText = procName;
-                        if(parameters != null)
+                        if (parameters != null)
                         {
                             command.Parameters.AddRange(parameters);
                         }
