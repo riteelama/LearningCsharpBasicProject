@@ -41,3 +41,5 @@ D:\LearningCsharpBasicProject\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win
 D:\LearningCsharpBasicProject\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.AccessControl.dll
 D:\LearningCsharpBasicProject\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\LearningCsharpBasicProject\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\LearningCsharpBasicProject\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Properties.Resources.resources
+D:\LearningCsharpBasicProject\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.ManageEmp.resources

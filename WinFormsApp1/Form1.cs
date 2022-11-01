@@ -25,6 +25,7 @@ namespace WinFormsApp1
             dataGridView1.DataSource = dt;
         }
 
+        #region "SaveLogic"
         private void btnName_Click(object sender, EventArgs e)
         {
             Employee obj = new Employee();
@@ -50,7 +51,7 @@ namespace WinFormsApp1
 
             EmployeeDataProvider objData = new EmployeeDataProvider();
             objData.AddEmpBySP(objEmp);
-            if(userId == 0)
+            if (userId == 0)
             {
                 objData.AddEmpBySP(objEmp);
             }
@@ -94,7 +95,7 @@ namespace WinFormsApp1
             EmployeeDataProvider objEmpData = new EmployeeDataProvider();
             DataTable dt = objEmpData.GetEmpByUserId(userId);
 
-            if(dt != null)
+            if (dt != null)
             {
                 foreach (DataRow dr in dt.Rows)
                 {
@@ -122,7 +123,35 @@ namespace WinFormsApp1
             MessageBox.Show("Data Deleted from database successfully!!!");
 
             BindDataGrid();
-         }
+        }
+        #endregion
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ManageEmp objEmp = new ManageEmp();
+            objEmp.ShowDialog();
+        }
+
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var objResult = MessageBox.Show("This is the message", "This is Caption",MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            var value = objResult.ToString();
+            MessageBox.Show("You have clicked " + value + " button");
             
         }
+
+        private void testToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var objResult = MessageBox.Show("Test Menu Option", "This is the test Menu", MessageBoxButtons.OKCancel, MessageBoxIcon.Hand);
+            var value = objResult.ToString();
+            MessageBox.Show("You have clicked " +  value + " button");
+        }
+
+        private void yesNoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var objResult = MessageBox.Show("Yess/No Option", "This is the yes no test option", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            var value = objResult.ToString();
+            MessageBox.Show("You have clicked " + value + " button");
+        }
     }
+}

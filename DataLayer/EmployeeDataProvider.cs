@@ -11,6 +11,12 @@ using UserManagement;
 namespace DataLayer
 {
     public class EmployeeDataProvider
+
+    ///<summary>
+    ///This method is used to add employee in to the database
+    ///</summary>
+    ///<param name="objEmp">Please pass the Employee object with first name and last name</param>
+
     {
         string sqlConString = ConfigurationManager.ConnectionStrings["SQLConn"].ToString();
         public void AddEmployee(Employee objEmp)
